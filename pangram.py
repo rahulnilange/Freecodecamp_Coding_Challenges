@@ -26,4 +26,4 @@ def is_pangram(sentence, letters):
     unique_sentence = set(char.lower() for char in sentence if char.isalpha())
     unique_letters = set(letters)
 
-    return not unique_sentence.symmetric_difference(unique_letters)
+    return unique_sentence == unique_letters
